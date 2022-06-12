@@ -1,0 +1,10 @@
+---
+layout: layout.njk 
+---
+<article>
+    {{content}}
+</article>
+{% include 'backlinks.html' %}
+{%- for note in collections.note -%}
+  <li>{{ note.data.title }}</li>
+{%- endfor -%}

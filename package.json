@@ -1,5 +1,5 @@
 {
-  "name": "11ty-publish",
+  "name": "11ty-mind-garden",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bretzawilski/11ty-publish.git"
+    "url": "git+https://github.com/bretzawilski/11ty-mind-garden.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bretzawilski/11ty-publish/issues"
+    "url": "https://github.com/bretzawilski/11ty-mind-garden/issues"
   },
-  "homepage": "https://github.com/bretzawilski/11ty-publish#readme",
+  "homepage": "https://github.com/bretzawilski/11ty-mind-garden#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-footnote": "^3.0.3",
+    "moment": "^2.29.3",
+    "title-case": "^3.0.3"
+  },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1"
   }
 }
