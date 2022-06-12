@@ -12,13 +12,13 @@ type: page
   <p>Some examples of modern CSS include:</p>
   <ul>
     <li>
-      <a href="Presentation-Test/" target="_blank">Test Presentation</a>
+      <a href="public/Presentation-Test/" target="_blank">Test Presentation</a>
     </li>
     <li>
-      <a href="spur-2021/" target="_blank">SPUR 2021</a>
+      <a href="public/spur-2021/" target="_blank">SPUR 2021</a>
     </li>
     <li>
-      <a href="summer-2022/" target="_blank">Summer Sampler 2022</a>
+      <a href="public/summer-2022/" target="_blank">Summer Sampler 2022</a>
     </li>
   </ul>
 
