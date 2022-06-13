@@ -5,7 +5,7 @@ moment.locale("en");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./style.css");
   eleventyConfig.addPassthroughCopy("./script.js");
-  eleventyConfig.addPassthroughCopy("./public")
+  eleventyConfig.addPassthroughCopy("./reveal")
   
 
 
