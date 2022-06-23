@@ -20,6 +20,9 @@ type: page
     <li>
       <a href="/reveal/summer-2022.html" target="_blank">Summer Sampler 2022</a>
     </li>
+    <li>
+      <a href="/reveal/open-day.html" target="_blank">Open Day 2022</a>
+    </li>
   </ul>
 
 </section>
