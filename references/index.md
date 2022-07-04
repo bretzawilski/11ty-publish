@@ -31,4 +31,4 @@ layout: page
 21. Cunningham, Eamon. (2019). Teaching Invention: Leveraging the Power of Low-Stakes Writing. _Teaching/Writing: The Journal of Writing Teacher Education_, _6_(1).
 22. Salomon, Gavriel, & Perkins, David. (1988). Teaching for transfer. _Educational Leadership_, _46_(1), 22–32.
 23. Silver, Naomi. (2013). Reflective pedagogies and the metacognitive turn in college teaching. _Using Reflection and Metacognition to Improve Student Learning: Across the Disciplines, across the Academy_, 1–17.
-24. Wardle, Elizabeth. (2012). Creative repurposing for expansive learning: Considering ‘problem-exploring’and ‘answer-getting’dispositions in individuals and fields. _Composition Forum_, _26_(1).
+24. Wardle, Elizabeth. (2012). Creative repurposing for expansive learning: Considering ‘problem-exploring’ and ‘answer-getting’ dispositions in individuals and fields. _Composition Forum_, _26_(1).
