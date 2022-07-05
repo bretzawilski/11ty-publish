@@ -23,6 +23,9 @@ type: page
     <li>
       <a href="/reveal/open-day.html" target="_blank">Open Day 2022</a>
     </li>
+    <li>
+      <a href="/reveal/sci-writing.html" target="_blank">Science in Multiple Modes</a>
+    </li>
   </ul>
 
 </section>

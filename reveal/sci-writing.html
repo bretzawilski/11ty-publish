@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Science Writing in Multiple Modes</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<style>
+	sup {
+		color: #258BD2;
+		font-size: 0.6em !important;
+	}
+	
+	li {
+		font-size: 0.7em;
+	}
+
+	html {
+		font-size: 07.em !important; 
+	}
+
+</style>
+
+<!-- .slide: data-background-image="/reveal/assets/science.jpg" -->
+<div style="background-color: rgba(0, 0, 0, 0.85); color: white; padding-top: 10px; border-radius: 20px;">
+
+## Science Writing in Multiple Modes
+#### Podcasting and Public Discourse
+
+<small><center>Dr. Bret J. Zawilski</center></small>
+<small><center>Lecturer of Critical Skills</center></small>
+
+</div>
+</script></section><section  data-markdown><script type="text/template">
+### INDEPENDENT VIEWING INSTRUCTIONS
+
+- Press 'o' to toggle presentation outline
+
+- Press Spacebar to advance through presentation in order
+
+- Use left/right and up/down arrows to navigate
+
+- Some slides have vertically embedded content
+</script></section><section ><section data-markdown><script type="text/template">
+## Learning Goals of the Unit
+- Examine the genres of scientific communication<sup>1, 2</sup>
+- Develop a terminology for exploring multimodal texts<sup>3</sup>
+- Explore the affordances and limitations of new media platforms<sup>4, 5</sup>
+- Compose a podcast with an accompanying website based on current scientific research
+</script></section><section data-markdown><script type="text/template">
+### Genre Knowledge
+- Genres reflect the problems they address<sup>6, 7</sup>
+- Texts are forms of taking action, not passive conduits for information<sup>8</sup>
+- Multiple genres participate in the "lifecycle" of scientific knowledge<sup>9</sup>
+- Examples include:
+	- Journal Articles
+	- Conference Presentations
+	- Research Posters
+	- Surveys for Non-field Specialists
+	- Grant Proposals
+	- Science Popularization articles
+</script></section><section data-markdown><script type="text/template">
+### Metacognitive Frames
+- Rhetorical Situations as a way to understand the positioning of texts<sup>10, 11</sup>
+	- Exigence: a problem or gap in knowledge to be addressed
+	- Audience: body of individuals who can take action to address the exigence
+	- Constraints: the affordances and limitations inherent to media and genres
+	<br><br>
+- Recursive writing processes involving ongoing revision<sup>12</sup>
+<br><br>
+- Primary and Secondary Literacies as lenses into discourse<sup>13</sup>
+<br><br>
+- Reflection and Metacognition as overt frames to encourage transfer<sup>14, 15</sup>
+	- Reflection-in-Action: ongoing reflection during a task
+	- Constructive Reflection: connection of literacies to self-identity
+	- Reflection-in-Presentation: synthesis of prior experiences to take forward
+</script></section><section data-markdown><script type="text/template">
+### Analysis of New Media
+- Low-stakes exploration of a new media platform
+	- Facebook
+	- Twitter
+	- Instagram
+	- TikTok
+	- Tumblr
+- How is science presented on the chosen platform?<sup>9</sup>
+- What are the rhetorical "moves" being made?
+- What are the benefits and detriments of the platform for effective communication?<sup>16</sup>
+</script></section><section data-markdown><script type="text/template">
+### The Podcast
+- Students work collaboratively in teams,
+- Synthesize research findings into a proposal for a podcast,
+- Analyze affordances and limitations of podcasts,
+- Create a rough script based upon findings,
+- Record, edit, and remix an aural podcast draft, 
+- Revise the podcast based on peer and instructor feedback, and
+- Submit the podcast as part of an accompanying website
+</script></section><section data-markdown><script type="text/template">
+
+### [Link to Digital Composition Unit](https://bit.ly/digi-comp-unit)
+<br> <br>
+#### [PDF Backup](digital-composition-unit.pdf)</script></section></section><section ><section data-markdown><script type="text/template">
+## Writing in the Disciplines
+- Analyze the functional, critical, and rhetorical literacies employed in digital writing tools<sup>4</sup>
+- Better understand the genres of scientific communication
+- Provide a metacognitive scaffolding including terminology
+- Share specialized knowledge with a broader public audience
+</script></section><section data-markdown><script type="text/template">
+### Selber's Multiliteracies
+<style>
+	h5 {
+	margin-bottom: 0px !important;
+	}
+</style>
+*Literacy* | *Description*
+--- | ---
+Functional | Can negotiate a tool and its interface
+Critical | Understand affordances and limitations
+Rhetorical | Use constraints to create effective texts
+</script></section><section data-markdown><script type="text/template">
+### Rearticulation, Not Transmission
+- Writing as a metacognitive overlay coupled with content expertise<sup>17</sup>
+- Information is altered whenever it is rearticulated<sup>18</sup>
+- Ethical communicators need to understand use of metaphor and analogy, but also how to simplify without erasing nuance<sup>16</sup>
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Key Pedagogical Principles
+- Writing is a messy, recursive, exploratory process<sup>19</sup>
+- Texts accomplish actions in the world
+- Deliberate Practice is a key component of learning<sup>20, 21</sup>
+- Metacognitive elements highlight low-road and high-road transfer<sup>22, 23</sup>
+	- Provides a scaffold for future learning
+	- Enhances pedagogical memories
+- Engaging with messy problems requires Knowledge-Exploring dispositions rather than Answer-Getting dispositions<sup>24</sup>
+</script></section><section data-markdown><script type="text/template">
+## What I Bring
+
+-   Expertise in the rhetoric of science and genre analysis
+-   Pedagogical practice incorporating digital rhetoric frameworks
+-   Background in Composition; Technical and Scientific Writing
+-   Classroom-based research experience for programmatic assessment
+-   Investment in student-centered pedagogy and professional mentorship
+-   Professional editorial experience with research-based digital webtexts
+</script></section></section><section  data-markdown><script type="text/template">
+## Thank you
+A copy of these slides can be found at:
+
+[writing-rhetoric.com/reveal/sci-writing.html](https://writing-rhetoric.com/reveal/sci-writing.html)
+<br><br><br>
+Additional questions? Please contact me at:
+
+bret.zawilski@mu.ie
+</script></section><section  data-markdown><script type="text/template"><iframe width="100%" height="600px" src="https://www.writing-rhetoric.com/references/" title="References"></iframe></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"slide","transitionSpeed":"slow"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
