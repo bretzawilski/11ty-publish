@@ -8,7 +8,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./reveal")
   
 
-
   eleventyConfig.addFilter("dateIso", (date) => {
     return moment(date).toISOString();
   });

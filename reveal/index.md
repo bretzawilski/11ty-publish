@@ -9,7 +9,7 @@ type: page
   <p>
       Below is a list of all the slide decks currently available for viewing.
   </p>
-  <p>Some examples of modern CSS include:</p>
+  <p></p>
   <ul>
     <li>
       <a href="/reveal/test.html" target="_blank">Test Presentation</a>
