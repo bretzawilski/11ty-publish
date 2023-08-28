@@ -18,6 +18,9 @@ type: page
       <a href="/reveal/spur-2021.html" target="_blank">SPUR 2021</a>
     </li>
     <li>
+      <a href="/reveal/spur-2023.html" target="_blank">SPUR 2023</a> 
+    </li>
+    <li>
       <a href="/reveal/summer-2022.html" target="_blank">Summer Sampler 2022</a>
     </li>
     <li>
